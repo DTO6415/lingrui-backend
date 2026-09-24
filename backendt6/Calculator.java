@@ -5,11 +5,11 @@ public class Calculator {
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("请输入第一个数字:");
-		double firstNumber = scanner.nextDouble();
+		long firstNumber = scanner.nextLong();
 		System.out.println("请输入运算符 (+, -, *, /):");
         char operator = scanner.next().charAt(0);
 		System.out.println("请输入第二个数字:");	
-		double secondNumber = scanner.nextDouble();
+		long secondNumber = scanner.nextLong();
         if (operator == '/' && secondNumber == 0) {
             System.out.println("除数不能为 0");
 			scanner.close();
